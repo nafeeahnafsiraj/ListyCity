@@ -29,7 +29,7 @@ public class City implements Comparable<City> {
      * This returns the name of the city
      * @return The name of the city
      */
-    String getCityName() {
+    public String getCityName() {
         return this.city;
     }
 
@@ -37,7 +37,7 @@ public class City implements Comparable<City> {
      * This returns the name of the province
      * @return The name of the province
      */
-    String getProvinceName() {
+    public String getProvinceName() {
         return this.province;
     }
 
