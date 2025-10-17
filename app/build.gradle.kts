@@ -36,8 +36,6 @@ android {
 }
 
 dependencies {
-
-    implementation(files("C:\\Users\\nafee\\AppData\\Local\\Android\\Sdk\\platforms\\android-36\\android.jar"))
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
