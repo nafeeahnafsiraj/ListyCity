@@ -73,6 +73,9 @@ class CityListTest {
         assertEquals(0, mockCity().compareTo(cityList.getCities().get(1)));
     }
 
+    /**
+     * Tests whether hasCity() correctly identifies if a city is present in the list
+     */
     @Test
     void testHasCity() {
         CityList cityList = mockCityList();
@@ -80,6 +83,9 @@ class CityListTest {
         assertTrue(cityList.hasCity(city));
     }
 
+    /**
+     * Tests whether delete() removes a city from the list correctly and the city count decreases accordingly
+     */
     @Test
     void testDelete() {
         CityList cityList = mockCityList();
@@ -88,6 +94,9 @@ class CityListTest {
         assertEquals(0, cityList.countCities());
     }
 
+    /**
+     * Tests whether delete() throws IllegalArgumentException when trying to remove a city that doesn't exist in the list
+     */
     @Test
     void testDeleteException() {
         CityList cityList = mockCityList();
@@ -97,6 +106,9 @@ class CityListTest {
         });
     }
 
+    /**
+     * Tests whether countCities() correctly returns number of cities currently in the list.
+     */
     @Test
     void testCountCities() {
         CityList cityList = mockCityList();

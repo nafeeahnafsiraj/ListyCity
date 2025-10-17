@@ -44,6 +44,7 @@ public class CityList {
     /**
      * Deletes city from list if it exists
      * @param city the city we are removing
+     * @throws IllegalArgumentException if the city doesn't exist in the list.
      */
     public void delete(City city) {
         if (!cities.contains(city)) {
